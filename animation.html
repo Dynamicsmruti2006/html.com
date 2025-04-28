@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Animation in CSS</title>
+	<style type="text/css">
+		.container{
+			width: 100vw;
+			height: 100vh;
+			background-color: lightpink;
+			border: 5px solid black;
+			animation-name: holi;
+			animation-duration: 1s;
+			animation-iteration-count: infinite;
+		} 
+		@keyframes holi{
+			0%{
+				background-color: aqua;
+			}
+			25%{
+				 background-color: purple;
+			}
+			50%{
+				background-color: blue;
+			}	 
+			75%{
+				background-color: red;
+			}
+			100%{
+				background-color: skyblue;
+			}
+		}
+		*{
+			margin:0;
+			padding:0;
+			box-sizing: border-box;
+		}
+		.box{
+			height: 80px;
+			width:350px;
+			background-color: lightblue;
+			border: 10px solid black;
+			border-radius: 40px;
+			margin: 40px;
+			position: relative;
+			animation-name: holli;
+			animation-duration: 3s;
+			animation-iteration-count: 5;
+			text-align: center;
+			outline-style: double;
+			outline-width: thick;
+			outline-color: aqua;
+			animation-play-state: ;
+		}
+		@keyframes holli{
+			from{
+				top:0;
+				left:0;
+			}
+			to{
+				top:0;
+				left:1000px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="box">Smruti</div>
+	</div>
+</body>
+</html>
