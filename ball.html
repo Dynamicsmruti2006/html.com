@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ball animation in css</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+        }
+        .ball{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: ;
+            animation: bounce 0.5s;
+            animation-direction: alternate;
+            animation-timing-function: cubic-bezier(.5,0.05,1,.5);
+            animation-iteration-count: infinite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 150px;
+        }
+        @keyframes bounce{
+            from{
+                transform: translate3d(0,0,0);
+            }
+            to{
+                transform: translate3d(0,300px,0);
+            }
+        }
+    </style> 
+</head>
+<body>
+    <div class="ball">😺</div>
+    <div class="ball">🐼</div>
+    <div class="ball">🦓</div>
+</body>
+</html>
